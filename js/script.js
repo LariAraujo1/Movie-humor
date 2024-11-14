@@ -1,0 +1,1 @@
+// Funcionalidades globais (se aplicam a todas as paginas)
