@@ -30,3 +30,5 @@ git branch -M nome-da-branch
 ## Sintax do ReadMe ##
 
 ![alt text](https://files.readme.io/f7c30f9-markdown_syntax.png)
+[Site de referencia](https://thatswine.online/#!/tab/630485782-2)
+[Figma](https://www.figma.com/design/ISR02YAx9Zv6RbtjrgV1Zc/filmes?node-id=0-1&node-type=canvas&t=cY1HpgIhI2OYPPJV-0)

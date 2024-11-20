@@ -9,6 +9,7 @@ text-align: center;
 padding-top: 50px;
 margin-top: 5px; 
 
+
 }
 
 .leftside, .rightside {
@@ -21,7 +22,7 @@ margin-top: 5px;
 
 .leftside {
     left: 0; 
-    background-color: blueviolet; 
+    background-color: #181C14; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,9 +31,13 @@ margin-top: 5px;
 
 .rightside {
     right: 0; 
-    background-color: #b38888; 
+    background-color: #cfc6b8; 
     display: flex; 
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+#novo{
+ color: aliceblue;   
 }
