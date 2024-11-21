@@ -1,31 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minhas Listas</title>
-  <link rel="stylesheet" href="css/minhalista.css">
-  <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
-</head>
+
 <body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Listas</title>
+    <link rel="stylesheet" href="css/minhalista.css">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <style>
+      header {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        flex: 30%;
+      }
+
+      .logo>img {
+        height: 120px;
+        width: 150px;
+      }
+
+      .Slogan {
+        font-family: "Edu AU VIC WA NT Pre", cursive;
+        flex: 35%;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .area_login {
+        font-family: "Edu AU VIC WA NT Pre", cursive;
+        flex: 35%;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      #cad {
+        color: #cfc6b8;
+      }
+
+      #cad:hover {
+        color: #dd302b;
+
+
+
+      }
+
+      .rodape-content {
+        color: #cfc6b8;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+      }
+    </style>
+  </head>
+  <header>
+    <div class="logo">
+      <img src="./assets/logo.png" alt="logo">
+    </div>
+    <div class="Slogan">
+      <h2 style="color:  #cfc6b8;">Seu humor é o nosso diretor</h2>
+    </div>
+    <div class="area_login">
+      <a id="cad" href="login.html">
+        <h2>Cadastra-se/Login!</h2>
+      </a>
+    </div>
+  </header>
   <nav>
     <div class="navbar">
-    <div class="logo"><a href="index.html"><img src="logo1.png" alt=""></a></div>
-    <div class="menu">
-      <ul>
-        <li><a href="index.html">Encontre seu filme</a></li>
-        <li><a href="">Catalogo</a></li>
-        <li><a href="minhalista.html">Minha lista</a></li>
-      </ul>
+      <div class="menu">
+        <ul>
+          <li><a href="descubra-filme.html">Encontre seu filme</a></li>
+          <li><a href="catalogo.html">Catalogo</a></li>
+          <li><a href="minhalista.html">Minha lista</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="user">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path
-          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
-        />
-      </svg>
-    </div>
-  </div>
   </nav>
   <header>
     <h1>Listas</h1>
@@ -34,9 +92,9 @@
   <div class="novalista" id="novalista">
     <button id="fecharDiv">X</button>
     <label for="listNameInput">Nova Lista</label>
-  <input type="text" id="listNameInput" placeholder="Nome da nova lista">
-  <button id="createListButton" class="create-list">Criar Lista</button>
-</div>
+    <input type="text" id="listNameInput" placeholder="Nome da nova lista">
+    <button id="createListButton" class="create-list">Criar Lista</button>
+  </div>
   <main>
     <section>
       <h1>Favoritos</h1>
@@ -45,8 +103,16 @@
     <section>
       <h1>Assistidos</h1>
       <div id="watchedGrid" class="grid"></div>
-    </main>
-    </section>
+  </main>
+  </section>
+  <footer>
+    <div class=rodape>
+      <div class=rodape-content>
+        <p style="margin: 0;">Copyright © Feelmes. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
   <script src="js/minhalista.js"></script>
 </body>
+
 </html>
