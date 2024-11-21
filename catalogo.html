@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <link rel="shortcut icon" href="Grey Orange Minimalist Film Production Logo-Photoroom.png" type="image/x-icon" />
+    <script src="js/catalogo.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="Grey Orange Minimalist Film Production Logo-Photoroom.png" alt="" /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Encontre seu filme</a></li>
+            <li><a href="">Catalogo</a></li>
+            <li><a href="">Minha lista</a></li>
+          </ul>
+        </div>
+        <div class="user">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <div class="titulo">
+      <h2>Catalogo</h2>
+    </div>
+    <div class="opcoes">
+      <div class="buttonCLASS">
+        <label for="classificar">Classificar Por:</label>
+        <button name="classificar" id="classificar">A - B</button>
+      </div>
+    </div>
+    <div class="catalogo">
+      <div class="divFiltros">
+        <h1>Filtros</h1>
+        <h2>Emoção:</h2>
+        <div class="filtros">
+          <form action="">
+            <input type="radio" name="emocoes" id="feliz" onclick="checkedR(this); selectEmotion(this);" />
+            <label for="feliz">Feliz</label>
+            <br />
+            <input type="radio" name="emocoes" id="triste" onclick="checkedR(this); selectEmotion(this);" />
+            <label class="input" for="triste">Triste</label>
+          </form>
+          <button id="clear">Limpar Filtros</button>
+        </div>
+      </div>
+      <div class="filmes" id="filmes">
+      </div>
+    </div>
+  </body>
+</html>
