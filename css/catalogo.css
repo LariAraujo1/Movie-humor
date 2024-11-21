@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+:root {
+  --laranja: #dd302b;
+  --fundo: #121213;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Geist Mono", monospace;
+  background-color: var(--fundo);
+  color: white;
+}
+nav {
+  display: flex;
+  width: 80%;
+  place-content: center;
+  margin: 0 auto;
+  padding: 1% 0 1% 0;
+  border-bottom: 1px solid var(--laranja);
+}
+nav svg {
+  height: 25px;
+  margin: 0 15px;
+  text-align: end;
+}
+.menu {
+  width: 80%;
+  justify-content: space-evenly;
+}
+.menu ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 15px;
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  border-bottom: 1px solid var(--laranja);
+  color: var(--laranja);
+}
+.logo {
+  width: 20%;
+  justify-content: center;
+}
+.logo img {
+  height: 50px;
+}
+.user {
+  display: flex;
+  width: 20%;
+  justify-content: end;
+}
+.user svg {
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+}
+.titulo h2 {
+  text-align: center;
+  margin: 2% 0;
+}
+.opcoes {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.opcoes button {
+  padding: 10px;
+  background-color: #d9d9d9;
+  border: transparent;
+  border-radius: 50px;
+}
+.buttonOP {
+  margin: 0 30px;
+}
+.catalogo {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.catalogo h1 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.catalogo h2 {
+  font-size: clamp(0.5rem, 5vw, 1.2rem);
+}
+.catalogo h2 {
+  margin-bottom: 5px;
+}
+.divFiltros {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: fit-content;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #1c1c1e;
+}
+.filtros button {
+  border-radius: 20px;
+  height: fit-content;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--laranja);
+  color: white;
+  border: transparent;
+}
+.opcoes button {
+  border-radius: 20px;
+  height: fit-content;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--laranja);
+  color: white;
+  border: transparent;
+}
+.filmes {
+  display: grid;
+  width: 80%;
+  padding: 0 20px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px));
+  gap: 10px;
+  place-items: center;
+}
+
+.card {
+  background-color: var(--laranja);
+  border: 1px solid var(--laranja);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 150px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 10px;
+  color: white;
+}
+@media (max-width: 425px) {
+  .menu {
+    display: none;
+  }
+  .logo{
+    width: 50%;
+  }
+  .user{
+    width: 50%;
+}
+.divFiltros{
+    display: none;
+}.filmes{
+    width: 100%;
+}
+.card img{
+  height: max-content;
+}
+}
