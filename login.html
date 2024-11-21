@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/login.css">
-   <script src="script.js" defer></script>
+   <script src="login.js" defer></script>
    <!-- O defer garante que o script será carregado em paralelo ao HTML, mas será executado apenas após o carregamento completo do DOM. -->
    <!-- <script src=""></script> -->
     
@@ -17,7 +17,11 @@
 
     <div class="leftside">
     <h1 id="novo">Novo por aqui?</h1>
-    <button id="button-criar-conta">Criar conta</button>
+    
+    <a href="cadastro.html">
+        <button id="button-criar-conta">Criar conta</button>
+    </a>
+    
     </div> 
 
     <div class="rightside">
@@ -37,7 +41,10 @@
                 <input type="password" id="senha-form" name="senha-form" required>
             </div>
 
-            <button type="submit" class="login-button">Entrar</button>
+            <a href="index.html">
+                <button type="submit" class="login-button">Entrar</button>
+            </a>
+            
 
         </form>
     </div>
