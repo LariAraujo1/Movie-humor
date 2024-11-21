@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const filmesPorHumor = {
         alegria: {
             nome: "O Rei Leão",
-            capa: "/assets/happy.jpg",
+            capa: "./assets/happy.png",
             sinopse: "A história de Simba, um leão jovem que deve enfrentar seu destino para se tornar rei."
         },
         reflexivo: {
