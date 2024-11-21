@@ -22,7 +22,7 @@ body{
     margin-right: 100px;
 }
 .nav-content{
-    width: 500px;
+    width: 550px;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -256,7 +256,7 @@ body{
 
 }
 
-@media (min-width: 601px){
+@media (min-width: 601px) and (max-width: 1200px) {
 
 
     body{
