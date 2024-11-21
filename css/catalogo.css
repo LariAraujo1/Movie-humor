@@ -37,11 +37,13 @@ nav svg {
   padding: 15px;
   list-style: none;
 }
-.navbar {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
+  .navbar {
+    display: flex;
+    width: 100%;
+    padding-left: 300px;
+    padding-right: 150px;
+    align-items: center;
+  }
 .navbar a {
   text-decoration: none;
   color: white;

@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --laranja: #dd302b;
   --fundo: #121213;
 }
+
 body {
   font-family: Poppins;
   position: relative;
@@ -21,13 +23,16 @@ header {
   justify-content: start;
   align-items: center;
 }
-header h1:first-child{
+
+header h1:first-child {
   font-size: 1.6rem;
 }
-header h1:not(:first-child){
+
+header h1:not(:first-child) {
   font-size: 1.4rem;
   margin: 0;
 }
+
 main {
   padding: 0 20px;
 }
@@ -46,6 +51,7 @@ h1 {
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .card {
   background-color: var(--laranja);
   border: 1px solid var(--laranja);
@@ -56,9 +62,11 @@ h1 {
   text-align: center;
   transition: 0.5s ease-in-out;
 }
+
 .card:hover {
   transform: scale(1.1);
 }
+
 .card img {
   width: 100%;
   height: 200px;
@@ -70,6 +78,7 @@ h1 {
   font-size: 16px;
   color: white;
 }
+
 .novalista {
   display: none;
   flex-direction: column;
@@ -86,6 +95,7 @@ h1 {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
 #fecharDiv {
   position: relative;
   background-color: transparent;
@@ -95,6 +105,7 @@ h1 {
   cursor: pointer;
   font-size: 1.2rem;
 }
+
 .novalista label {
   color: var(--laranja);
   font-size: 1.2rem;
@@ -112,6 +123,7 @@ h1 {
   text-align: left;
   border-radius: 20px;
 }
+
 .create-list {
   background-color: var(--laranja);
   margin-top: 15px;
@@ -121,6 +133,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .adicionarLista {
   position: absolute;
   display: flex;
@@ -133,9 +146,11 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .adicionarLista:hover {
   background-color: #e4413b;
 }
+
 .novoFilme {
   place-content: center;
   align-items: center;
@@ -149,9 +164,11 @@ h1 {
   text-align: center;
   transition: 0.5s ease-in-out;
 }
+
 .novoFilme:hover {
   transform: scale(1.1);
 }
+
 .novoFilme button {
   border-radius: 100%;
   height: fit-content;
@@ -161,80 +178,108 @@ h1 {
   color: white;
   border: transparent;
 }
-nav{
+
+nav {
   display: flex;
-  width: 80%;
-  place-content: center;
+  width: 100%;
+  justify-content: center;
+
   margin: 0 auto;
-  padding: 1% 0 1% 0;
   border-bottom: 1px solid var(--laranja);
 }
+
 nav svg {
   height: 25px;
   margin: 0 15px;
   text-align: end;
 }
-.menu{
+
+.menu {
   width: 80%;
   justify-content: space-evenly;
 }
-.menu ul{
+
+.menu ul {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   padding: 15px;
   list-style: none;
 }
-.navbar{
+
+.navbar {
   display: flex;
   width: 100%;
+  padding-left: 300px;
+  padding-right: 150px;
   align-items: center;
 }
-.navbar a{
+
+.navbar a {
   text-decoration: none;
   color: white;
 }
-.navbar a:hover{
+
+.navbar a:hover {
   border-bottom: 1px solid var(--laranja);
   color: var(--laranja);
 }
-.logo{
+
+.logo {
   width: 20%;
   justify-content: center;
 }
-.logo img{
+
+.logo img {
   height: 50px;
 }
-.user{
+
+.user {
   display: flex;
   width: 20%;
   justify-content: end;
 }
-.user svg{
+
+.user svg {
   background-color: white;
   padding: 5px;
   border-radius: 100px;
 }
-  .button{ border-radius: 20px; height: fit-content; margin-top: 20px; padding: 10px; cursor: pointer; background-color: var(--laranja); color: white; border: transparent;
-  
+
+.button {
+  border-radius: 20px;
+  height: fit-content;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--laranja);
+  color: white;
+  border: transparent;
+
 }
+
 @media (max-width: 600px) {
-  .menu{
+  .menu {
     display: none;
   }
-  .logo{
+
+  .logo {
     width: 50%;
   }
-  .user{
+
+  .user {
     width: 50%;
   }
-    .card{
-        width: 100%;
-    }
-    .card img{
-      height: max-content;
-    }
-    .card:hover{
-      transform: scale(1);
-    }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: max-content;
+  }
+
+  .card:hover {
+    transform: scale(1);
+  }
 }

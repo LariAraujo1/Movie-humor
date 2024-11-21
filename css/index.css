@@ -51,7 +51,7 @@ header {
 /*CSS MAIN */
 .desc {
     margin: 0px;
-    height: 500px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -109,7 +109,7 @@ hr {
 
 .rodape-content {
     color: #cfc6b8;
-    height: 200px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: start;
