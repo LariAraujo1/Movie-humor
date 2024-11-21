@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --laranja: #dd302b;
+  --fundo: #121213;
+}
+body {
+  font-family: Poppins;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: var(--fundo);
+  box-sizing: border-box;
+  color: var(--laranja);
+}
+
+header {
+  position: relative;
+  color: var(--laranja);
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header h1:first-child{
+  font-size: 1.6rem;
+}
+header h1:not(:first-child){
+  font-size: 1.4rem;
+  margin: 0;
+}
+main {
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: var(--laranja);
+  border: 1px solid var(--laranja);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 150px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: white;
+}
+.novalista {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #151516;
+  width: minmax(200px, 20%);
+  height: 150px;
+  border-radius: 20px;
+  padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+#fecharDiv {
+  position: relative;
+  background-color: transparent;
+  color: var(--laranja);
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.novalista label {
+  color: var(--laranja);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#listNameInput {
+  height: fit-content;
+  align-self: center;
+  color: var(--laranja);
+  border: 1px solid var(--laranja);
+  padding: 15px;
+  background-color: transparent;
+  text-align: left;
+  border-radius: 20px;
+}
+.create-list {
+  background-color: var(--laranja);
+  margin-top: 15px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.adicionarLista {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  right: 20px;
+  background-color: var(--laranja);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.adicionarLista:hover {
+  background-color: #e4413b;
+}
+.novoFilme {
+  place-content: center;
+  align-items: center;
+  background-color: var(--laranja);
+  border: 1px solid var(--laranja);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 150px;
+  height: 279px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.novoFilme:hover {
+  transform: scale(1.1);
+}
+.novoFilme button {
+  border-radius: 100%;
+  height: fit-content;
+  padding: 15px;
+  cursor: pointer;
+  background-color: var(--fundo);
+  color: white;
+  border: transparent;
+}
+nav{
+  display: flex;
+  width: 80%;
+  place-content: center;
+  margin: 0 auto;
+  padding: 1% 0 1% 0;
+  border-bottom: 1px solid var(--laranja);
+}
+nav svg {
+  height: 25px;
+  margin: 0 15px;
+  text-align: end;
+}
+.menu{
+  width: 80%;
+  justify-content: space-evenly;
+}
+.menu ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 15px;
+  list-style: none;
+}
+.navbar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover{
+  border-bottom: 1px solid var(--laranja);
+  color: var(--laranja);
+}
+.logo{
+  width: 20%;
+  justify-content: center;
+}
+.logo img{
+  height: 50px;
+}
+.user{
+  display: flex;
+  width: 20%;
+  justify-content: end;
+}
+.user svg{
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+}
+  .button{ border-radius: 20px; height: fit-content; margin-top: 20px; padding: 10px; cursor: pointer; background-color: var(--laranja); color: white; border: transparent;
+  
+}
+@media (max-width: 600px) {
+  .menu{
+    display: none;
+  }
+  .logo{
+    width: 50%;
+  }
+  .user{
+    width: 50%;
+  }
+    .card{
+        width: 100%;
+    }
+    .card img{
+      height: max-content;
+    }
+    .card:hover{
+      transform: scale(1);
+    }
+}
