@@ -67,3 +67,10 @@ body{
 .moods p{
     text-align: center;
 }
+
+
+/* Card-below */
+
+.card-below{
+    display: flex;
+}
