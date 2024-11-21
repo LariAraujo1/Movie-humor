@@ -1,39 +1,85 @@
 
-.titulo-login{
-text-align: center;
-padding-top: 50px;
-margin-top: 5px; 
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+body{
+    font-family:"Raleway", sans-serif;
+    font-weight: 100;
+    margin: 0;
+    font-size: 25px;
 }
 
-.leftside, .rightside {
-    width: 50%; 
-    height: 100vh; 
-    position: absolute; 
-    top: 0; 
-    box-sizing: border-box;
-}
 
-.leftside {
-    /* background-image: ; ??? */
-    left: 0; 
-    background-color: #181C14; 
+/* Content main */
+.container{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
-
-.rightside {
-    right: 0; 
-    background-color: #cfc6b8; 
-    display: flex; 
+.img-left img{
+        height: 250px;
+        width: 250px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 100%;
+    width: 50%;
+    background-color: #cfc6b8;
+   
+}
+.rightside{
+    color: #cfc6b8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+        background-color: #121213;
+
+}
+#login{
+    margin-bottom: 50px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-evenly;
+}
+.message{
+    margin-bottom: 50px;
+}
+input{
+    font-size:  18px;
+    height: 30px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button{
+    height: 50px;
+    font-size: 18px;
+    width: 100px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #dd302b;
+    border-color: #dd302b;
+    transition: 0.3s;
+    color: white;
 }
 
-#novo{
- color: aliceblue;   
+input:focus{
+    outline: none;
 }
