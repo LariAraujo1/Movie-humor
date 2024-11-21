@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+body{
+    font-family:"Geist Mono", monospace;;
+    background-color: #121213;
+}
+
+/* Cabecalho */
+
+.cabecalho{
+    color: #cfc6b8;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo img{
+    height: 100px;
+    width: 150px;
+}
+
+.nav{
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.nav-content{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#icon{
+    margin-top: 25px;
+    height: 30px;
+    width: 50px;
+}
+
+
+/* Conteudo */
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    color: #cfc6b8;
+}
+.card{
+    border: solid;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    color: #cfc6b8;
+    justify-content: center;
+}
+.moods{
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.moods img{
+    height: 150px;
+    width: 200px;
+}
+.moods p{
+    text-align: center;
+}
