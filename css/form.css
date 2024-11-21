@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+body{
+    font-family:"Geist Mono", monospace;;
+    background-color: #121213;
+    height: 180vh;
+}
+
+/* Cabecalho */
+
+.cabecalho{
+    color: #cfc6b8;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo img{
+    height: 120px;
+    width: 150px;
+}
+
+.nav{
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.nav-content{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#icon{
+    margin-top: 25px;
+    height: 30px;
+    width: 50px;
+}
+
+
+/* Conteudo */
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    color: #cfc6b8;
+}
+.card{
+    border: solid;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    color: #cfc6b8;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.moods{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.emoji{
+    transition: transform 0.3s ease-in-out;
+}
+.emoji:hover{
+    transform: scale(1.1);
+}
+
+.moods img{
+    height: 150px;
+    width: 200px;
+}
+.moods p{
+    text-align: center;
+}
+
+
+/* Card-below */
+
+.card-below{
+    display: flex;
+    width: 700px;
+}
+.movie{
+    color:#cfc6b8;
+}
+.movie-img img{
+    margin-right: 20px;
+    float: left;
+    height: 200px;
+    width: 300px;
+}
+.btn-container{
+    display: flex;
+    justify-content: end;
+
+}
+#btn{
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+    border-radius: 7px;
+}
+#btn:hover{
+    transition: 0.3s;
+    background-color: #dd302b;
+    border-color: #dd302b;
+
+}
+
+/* footer */
+
+    .rodape-content{
+        color: #cfc6b8;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+    }
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body{
+    font-size: 14px;
+  }
+  .cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .logo img{
+    height: 110px;
+    width: 150px;
+}
+.nav{
+    margin-right: 55px;
+    margin-top: 20px;
+
+}
+.nav-content{
+    width: 225px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+
+#icon{
+    margin-top: 25px;
+    height: 30px;
+    width: 50px;
+}
+
+
+/* Conteudo */
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    color: #cfc6b8;
+    font-size: 16px;
+}
+.card{
+    border: solid;
+    width: 500px;
+    height: 525px;
+    display: flex;
+    color: #cfc6b8;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.moods{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 525px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.emoji{
+    transition: transform 0.3s ease-in-out;
+}
+.emoji:hover{
+    transform: scale(1.1);
+}
+
+.moods img{
+    height: 100px;
+    width: 120px;
+}
+.moods p{
+    text-align: center;
+}
+
+
+/* Card-below */
+
+.card-below{
+    display: flex;
+    width: 500px;
+}
+.movie{
+    color:#cfc6b8;
+}
+.movie-img img{
+    margin-right: 20px;
+    float: left;
+    height: 200px;
+    width: 300px;
+}
+.btn-container{
+    display: flex;
+    justify-content: end;
+
+}
+#btn{
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+    border-radius: 7px;
+}
+#btn:hover{
+    transition: 0.3s;
+    background-color: #dd302b;
+    border-color: #dd302b;
+
+}
+
+/* footer */
+
+    .rodape-content{
+        color: #cfc6b8;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+
+
+}
+
+@media (min-width: 601px){
+
+
+    body{
+        font-size: 14px;
+      }
+      .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    
+      }
+      .logo img{
+        height: 110px;
+        width: 150px;
+    }
+    .nav{
+        margin-right: 55px;
+        margin-top: 20px;
+    
+    }
+    .nav-content{
+        width: 225px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    
+    }
+    
+    
+    #icon{
+        margin-top: 25px;
+        height: 30px;
+        width: 50px;
+    }
+    
+    
+    /* Conteudo */
+    .container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #title{
+        color: #cfc6b8;
+        font-size: 16px;
+    }
+    .card{
+        border: solid;
+        width: 600px;
+        height: 525px;
+        display: flex;
+        color: #cfc6b8;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .moods{
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        height: 525px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    
+    }
+    .emoji{
+        transition: transform 0.3s ease-in-out;
+    }
+    .emoji:hover{
+        transform: scale(1.1);
+    }
+    
+    .moods img{
+        height: 100px;
+        width: 120px;
+    }
+    .moods p{
+        text-align: center;
+    }
+    
+    
+    /* Card-below */
+    
+    .card-below{
+        display: flex;
+        width: 600px;
+    }
+    .movie{
+        color:#cfc6b8;
+    }
+    .movie-img img{
+        margin-right: 20px;
+        float: left;
+        height: 200px;
+        width: 300px;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: end;
+    
+    }
+    #btn{
+        font-size: 18px;
+        height: 30px;
+        width: 100px;
+        border-radius: 7px;
+    }
+    #btn:hover{
+        transition: 0.3s;
+        background-color: #dd302b;
+        border-color: #dd302b;
+    
+    }
+    
+    /* footer */
+    
+        .rodape-content{
+            color: #cfc6b8;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+        }
+    
+    
+    
+}
+
