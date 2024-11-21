@@ -1,0 +1,20 @@
+/* CSS HEADER */
+header {
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+}
+/*CSS EMOÇÕES COMUNS */
+.filmes_escolha {
+    display: flex;
+    flex-direction: row;
+}
+.e {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.e img {
+    height: 150px;
+    width: 200px;
+}
