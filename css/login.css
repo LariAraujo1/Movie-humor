@@ -1,0 +1,43 @@
+*{
+   
+
+
+}
+
+.titulo-login{
+text-align: center;
+padding-top: 50px;
+margin-top: 5px; 
+
+
+}
+
+.leftside, .rightside {
+    width: 50%; 
+    height: 100vh; 
+    position: absolute; 
+    top: 0; 
+    box-sizing: border-box;
+}
+
+.leftside {
+    left: 0; 
+    background-color: #181C14; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rightside {
+    right: 0; 
+    background-color: #cfc6b8; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#novo{
+ color: aliceblue;   
+}
