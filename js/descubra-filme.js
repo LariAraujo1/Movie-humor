@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Adicionando evento de clique nas opções de humor
-    document.getElementById("joy").addEventListener("click", () => sugerirFilme("alegria"));
+    document.getElementById("happy").addEventListener("click", () => sugerirFilme("alegria"));
     document.getElementById("reflexivo").addEventListener("click", () => sugerirFilme("reflexivo"));
     document.getElementById("melancolico").addEventListener("click", () => sugerirFilme("melancolico"));
     document.getElementById("nostalgico").addEventListener("click", () => sugerirFilme("nostalgico"));
