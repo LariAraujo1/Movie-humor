@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lista de filmes por humor
     const filmesPorHumor = {
         alegria: {
-            nome: "O Rei Leão",
-            capa: "./assets/happy.png",
-            sinopse: "A história de Simba, um leão jovem que deve enfrentar seu destino para se tornar rei."
+            nome: "Happy Feet",
+            capa: "./assets/happyfeet.jpg",
+            sinopse: "Happy Feet é uma animação encantadora que acompanha Mano, um jovem pinguim-imperador que não sabe cantar como os outros de sua espécie, mas possui um talento especial para sapatear. Em sua jornada para se encontrar e conquistar seu lugar na colônia, Mano enfrenta desafios, descobre amizades inusitadas e aprende a importância de ser fiel a si mesmo."
         },
         reflexivo: {
-            nome: "A Vida é Bela",
-            capa: "/assets/reflexivo.jpg",
-            sinopse: "Um pai faz o impossível para proteger seu filho durante o Holocausto, usando sua imaginação."
+            nome: "A Sociedade dos Poetas Mortos",
+            capa: "./assets/asociedade.jpg",
+            sinopse: "A Sociedade dos Poetas Mortos é um drama inspirador que acompanha um grupo de alunos de um rígido colégio interno que têm suas vidas transformadas pelo professor de literatura John Keating. Com métodos de ensino pouco convencionais, Keating os incentiva a pensar de forma independente e a "aproveitar o dia". A redescoberta de paixões e sonhos, no entanto, os leva a confrontar as expectativas da escola e de suas famílias, resultando em lições profundas sobre liberdade e autoconhecimento."
         },
         melancolico: {
             nome: "As Vantagens de Ser Invisível",
