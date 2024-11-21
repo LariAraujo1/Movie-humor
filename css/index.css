@@ -45,6 +45,7 @@ header {
 }
 
 #cad:hover {
+    transition: 0.3s;
     color: #dd302b;
 }
 
