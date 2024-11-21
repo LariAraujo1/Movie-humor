@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family:"Raleway", sans-serif;
+    margin: 0;
+}
+
+
+.fundo{
+    background-color: #121213;
+    height: 100vh;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 700px;
+    width: 500px;
+    background-color: #cfc6b8;
+    border-radius: 30px;
+}
+#formulario-header{
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    font-size: 16px;
+    height: 20px;
+    width: 220px;
+}
+input:focus{
+    outline: none;
+}
+.btn{
+    display: flex;
+    height: 43px;
+    align-items: center;
+}
+button{
+    border-radius: 10px;
+    font-size: 16px;
+    height: 30px;
+    width: 100px;
+}
+button:hover{
+    background-color: #dd302b;
+    border-color: #dd302b;
+    transition: 0.3s;
+    color: white;
+}
+#ultimo-link{
+    color: #dd302b;
+}

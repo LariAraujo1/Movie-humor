@@ -11,46 +11,61 @@
     <title>Página de Login</title>
 </head>
 <body>
-    <header>
-        <div class="logo"> </div>
-    </header>
 
-    <div class="leftside">
-    <h1 id="novo">Novo por aqui?</h1>
-    
-    <a href="cadastro.html">
-        <button id="button-criar-conta">Criar conta</button>
-    </a>
-    
-    </div> 
 
-    <div class="rightside">
-        
-    <div class="titulo-login">
-        <h1 id="login-titulo">Área de Login</h1>
-    </div>
-        
-        <form id="login">
-            <div class="login-form">
-                <label for="email-login">E-mail</label>
-            <input type="email" id="email-login" name="email-login" required>
-            </div>
 
-            <div class="senha-login">
-                <label for="senha-form">Senha</label>
-                <input type="password" id="senha-form" name="senha-form" required>
-            </div>
 
-            <a href="index.html">
-                <button type="submit" class="login-button">Entrar</button>
-            </a>
+    <div class=container>
+        <div class="leftside">
             
+            <div class="img-left">
+                <img src="assets/logo.png">
+            </div>
+            <h1 id="novo">Novo por aqui?</h1>
+        
+            <a href="cadastro.html">
+            <button id="button-criar-conta">Criar conta</button>
+            </a>
+        
+        </div> 
+        <div class="rightside">
+            <div class="message">
+                <h1> Bem-vindo!</h1>
+            </div>
 
-        </form>
+                <form id="login">
+                    <div class="login-form">
+
+                        <div class="titulo-login">
+                            <h1 id="login-titulo">Área de Login</h1>
+                        </div>
+
+
+
+                        <div class="form-container">
+                    <label for="email-login">E-mail</label>
+                    <input type="email" id="email-login" name="email-login" required>
+                    </div>
+    
+                    <div class="form-container">
+                    <label for="senha-form">Senha</label>
+                    <input type="password" id="senha-form" name="senha-form" required>
+                    </div>
+    
+                <div class="botao">
+                    <div class="btn">
+                        <button onclick="window.location.href='index.html'">Entrar</button>
+                    </div>
+                    
+                </div>
+    
+                </form>
+        </div>
+    
+    
     </div>
-
-
-</div>
+    </div>
+    
 
 <footer></footer>
 </body>
